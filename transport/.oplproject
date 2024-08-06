@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?><project>
+    	
+    <version>1.0</version>
+    	
+    <configs>
+        		
+        <config default="false" name="inter_s1" category="opl">
+            			
+            <ref name="intermodal.mod" type="model">
+			</ref>
+            			
+            <ref name="i_s1.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="inter_s2" category="opl">
+            			
+            <ref name="intermodal.mod" type="model">
+			</ref>
+            			
+            <ref name="i_s2.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="synchro_s2" category="opl">
+            			
+            <ref name="synchromodal.mod" type="model">
+			</ref>
+            			
+            <ref name="s_s2.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="inter_s3" category="opl">
+            			
+            <ref name="intermodal.mod" type="model">
+			</ref>
+            			
+            <ref name="i_s3.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="synchro_s3" category="opl">
+            			
+            <ref name="synchromodal.mod" type="model">
+			</ref>
+            			
+            <ref name="s_s3.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="true" name="Configuration1" category="opl">
+            			
+            <ref name="intermodal.mod" type="model">
+			</ref>
+            			
+            <ref name="i_s4.dat" type="data">
+			</ref>
+            		
+        </config>
+        	
+    </configs>
+    	
+
+</project>
