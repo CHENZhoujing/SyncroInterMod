@@ -111,13 +111,13 @@ execute {
     // 输出每个货物的运输路径
     // Output the transportation path for each good
     for (var gd in GoodsDetails) {
-        writeln("GoodName: ", gd.good);
-        writeln("Transported Quantity: ", gd.capacity);
-        writeln("Origin to destination: ", gd.origin, " to ", gd.destination);
+        writeln("Good: ", gd.good);
+        var totalTransported = 0;
         for (var s in Services) {
             if (x[gd.good][s] > 0) {
                 writeln("  - Service: ", s.modality, " from ", s.origin, " to ", s.destination, 
                         ", Transported Quantity: ", x[gd.good][s]);
+                totalTransported += x[gd.good][s];
             }
         }
         // 检查是否超时
@@ -127,11 +127,18 @@ execute {
         } else {
             writeln("  - Status: On Time");
         }
-        
-        //if (timeViolation2[gd.good] == 1) {
-        //    writeln("  - Status: No-solution");
-        //} else {
-        //    writeln("  - Status: OK");
-        //}
     }
+    	// 输出每条路径上的总运输量和运输能力对比
+    	// Output the total transported quantity and capacity for each path
+    	writeln("\nService Transport Volume and Capacity:");
+    	for (var s in Services) {
+        	var totalVolume = 0;
+        	for (var gd in GoodsDetails) {
+            	totalVolume += x[gd.good][s];
+        	}
+        	if (totalVolume != 0) {
+        	  	writeln("Service: ", s.modality, " from ", s.origin, " to ", s.destination, 
+                ", Total Transported Volume: ", totalVolume, "/", s.capacity);
+        	}
+    	}
 }

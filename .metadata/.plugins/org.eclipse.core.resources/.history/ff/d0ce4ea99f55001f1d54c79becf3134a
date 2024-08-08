@@ -113,7 +113,6 @@ execute {
     for (var gd in GoodsDetails) {
         writeln("GoodName: ", gd.good);
         writeln("Transported Quantity: ", gd.capacity);
-        writeln("Origin to destination: ", gd.origin, " to ", gd.destination);
         for (var s in Services) {
             if (x[gd.good][s] > 0) {
                 writeln("  - Service: ", s.modality, " from ", s.origin, " to ", s.destination, 

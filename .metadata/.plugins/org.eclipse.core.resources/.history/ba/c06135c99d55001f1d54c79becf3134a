@@ -7,7 +7,7 @@
 // 1000
 
  timelimit = 3600;
- epgap = 0.0032;
+ epgap = 0.001;
  
  
 GoodsDetails = {
