@@ -6254,3 +6254,859 @@ Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cple
 
 !ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 01:40:21.135
 !MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 16:19:36.355 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 16:19:36.358
+!MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 16:20:28.060 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 16:20:28.060
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 16:22:30.292 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 16:22:30.292
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 16:33:22.811 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 16:33:22.811
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 16:38:00.627 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 16:38:00.627
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 16:52:50.503 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 16:52:50.503
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 16:58:54.580 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 16:58:54.580
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 16:59:03.080 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 16:59:03.080
+!MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 17:02:04.006 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 17:02:04.007
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 17:03:25.782 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 17:03:25.783
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 17:03:35.861 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 17:03:35.861
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 17:03:42.158 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 17:03:42.158
+!MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 17:04:21.394 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 17:04:21.394
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 21:08:48.579 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 21:08:48.579
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 21:10:17.552 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 21:10:17.553
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 21:15:44.353 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 21:15:44.353
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 21:25:48.592 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 21:25:48.592
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-06 21:26:01.047 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 21:26:01.047
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2024-08-06 23:09:08.852
+!MESSAGE run failed
+!STACK 0
+ilog.concert.IloException: Processing aborted.
+	at ilog.opl.opl_lang_wrapJNI.IloOplErrorHandlerWrapper_superOk(Native Method)
+	at ilog.opl.IloOplErrorHandlerWrapper.superOk(IloOplErrorHandlerWrapper.java:86)
+	at ilog.opl.IloCustomOplErrorHandler.customOk(IloCustomOplErrorHandler.java:78)
+	at ilog.opl.IloCustomOplErrorHandler$MyEH.ok(IloCustomOplErrorHandler.java:35)
+	at ilog.opl.opl_lang_wrapJNI.SwigDirector_IloOplErrorHandlerWrapper_ok(opl_lang_wrapJNI.java:1147)
+	at ilog.opl.opl_lang_wrapJNI.IloOplModel_solveAlgorithm(Native Method)
+	at ilog.opl.IloOplModel.solveAlgorithm(IloOplModel.java:486)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessSimpleCP(IloOplRunConfigRunner.java:304)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessSimple(IloOplRunConfigRunner.java:179)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessModel(IloOplRunConfigRunner.java:163)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:377)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-08-06 23:09:25.368 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-06 23:09:25.368
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 15:56:53.867 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 15:56:53.868
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:31:14.344 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:31:14.344
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:31:24.260 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:31:24.260
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:31:53.760 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:31:53.760
+!MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:33:32.398 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:33:32.398
+!MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:34:40.559 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:34:40.560
+!MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:34:55.162 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:34:55.162
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:34:58.719 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:34:58.720
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:37:45.808 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:37:45.809
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:37:59.637 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:37:59.638
+!MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:51:34.454 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:51:34.454
+!MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2024-08-07 16:51:34.502
+!MESSAGE load failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: load failed
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doSetUpModel(IloOplRunConfigRunner.java:146)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:374)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: ilog.concert.IloException: Impossible to load model.
+	at ilog.opl.opl_lang_wrapJNI.IloOplRunConfiguration_getCppOplModel(Native Method)
+	at ilog.opl.IloOplRunConfiguration.getCppOplModel(IloOplRunConfiguration.java:240)
+	at ilog.opl.IloOplRunConfiguration.getOplModel(IloOplRunConfiguration.java:139)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doSetUpModel(IloOplRunConfigRunner.java:140)
+	... 3 more
+!SUBENTRY 1 ilog.odms.ide.opllang.remote 4 0 2024-08-07 16:51:34.502
+!MESSAGE load failed
+!STACK 0
+ilog.concert.IloException: Impossible to load model.
+	at ilog.opl.opl_lang_wrapJNI.IloOplRunConfiguration_getCppOplModel(Native Method)
+	at ilog.opl.IloOplRunConfiguration.getCppOplModel(IloOplRunConfiguration.java:240)
+	at ilog.opl.IloOplRunConfiguration.getOplModel(IloOplRunConfiguration.java:139)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doSetUpModel(IloOplRunConfigRunner.java:140)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:374)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-08-07 16:52:08.613 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:52:08.613
+!MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:52:11.442 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:52:11.442
+!MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:52:15.157 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:52:15.157
+!MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:52:32.671 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:52:32.671
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 16:56:23.674 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 16:56:23.675
+!MESSAGE Run inter_s3 in /Users/czj/Projets/Cplex/transport-with-time
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2024-08-07 16:56:23.716
+!MESSAGE load failed
+!STACK 1
+org.eclipse.core.runtime.CoreException: load failed
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doSetUpModel(IloOplRunConfigRunner.java:146)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:374)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: ilog.concert.IloException: Run configuration "inter_s3" is invalid.
+	at ilog.opl.opl_lang_wrapJNI.IloOplRunConfiguration_getCppOplModel(Native Method)
+	at ilog.opl.IloOplRunConfiguration.getCppOplModel(IloOplRunConfiguration.java:240)
+	at ilog.opl.IloOplRunConfiguration.getOplModel(IloOplRunConfiguration.java:139)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doSetUpModel(IloOplRunConfigRunner.java:140)
+	... 3 more
+!SUBENTRY 1 ilog.odms.ide.opllang.remote 4 0 2024-08-07 16:56:23.716
+!MESSAGE load failed
+!STACK 0
+ilog.concert.IloException: Run configuration "inter_s3" is invalid.
+	at ilog.opl.opl_lang_wrapJNI.IloOplRunConfiguration_getCppOplModel(Native Method)
+	at ilog.opl.IloOplRunConfiguration.getCppOplModel(IloOplRunConfiguration.java:240)
+	at ilog.opl.IloOplRunConfiguration.getOplModel(IloOplRunConfiguration.java:139)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doSetUpModel(IloOplRunConfigRunner.java:140)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:374)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-08-07 17:30:27.290 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 17:30:27.290
+!MESSAGE Run inter_s3 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 17:30:30.881 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 17:30:30.881
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 17:30:38.313 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 17:30:38.313
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 17:33:58.087 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 17:33:58.087
+!MESSAGE Run inter_s3 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 17:34:43.775 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 17:34:43.775
+!MESSAGE Run inter_s3 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 17:36:41.003 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 17:36:41.004
+!MESSAGE Run inter_s4 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 17:37:02.696 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 17:37:02.696
+!MESSAGE Run inter_s4 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 18:33:58.424 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 18:33:58.424
+!MESSAGE Run inter_s1 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 18:34:13.381 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 18:34:13.381
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 18:35:16.073 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 18:35:16.073
+!MESSAGE Run inter_s3 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 18:39:04.550 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 18:39:04.551
+!MESSAGE Run inter_s3 in /Users/czj/Projets/Cplex/transport-with-time
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2024-08-07 18:40:09.989
+!MESSAGE run failed
+!STACK 0
+ilog.concert.IloException: Processing aborted.
+	at ilog.opl.opl_lang_wrapJNI.IloOplErrorHandlerWrapper_superOk(Native Method)
+	at ilog.opl.IloOplErrorHandlerWrapper.superOk(IloOplErrorHandlerWrapper.java:86)
+	at ilog.opl.IloCustomOplErrorHandler.customOk(IloCustomOplErrorHandler.java:78)
+	at ilog.opl.IloCustomOplErrorHandler$MyEH.ok(IloCustomOplErrorHandler.java:35)
+	at ilog.opl.opl_lang_wrapJNI.SwigDirector_IloOplErrorHandlerWrapper_ok(opl_lang_wrapJNI.java:1147)
+	at ilog.opl.opl_lang_wrapJNI.IloOplModel_solveAlgorithm(Native Method)
+	at ilog.opl.IloOplModel.solveAlgorithm(IloOplModel.java:486)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessSimpleCP(IloOplRunConfigRunner.java:304)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessSimple(IloOplRunConfigRunner.java:179)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessModel(IloOplRunConfigRunner.java:163)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:377)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-08-07 18:41:10.715 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 18:41:10.716
+!MESSAGE Run inter_s3 in /Users/czj/Projets/Cplex/transport-with-time
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2024-08-07 18:41:28.994
+!MESSAGE run failed
+!STACK 0
+ilog.concert.IloException: Processing aborted.
+	at ilog.opl.opl_lang_wrapJNI.IloOplErrorHandlerWrapper_superOk(Native Method)
+	at ilog.opl.IloOplErrorHandlerWrapper.superOk(IloOplErrorHandlerWrapper.java:86)
+	at ilog.opl.IloCustomOplErrorHandler.customOk(IloCustomOplErrorHandler.java:78)
+	at ilog.opl.IloCustomOplErrorHandler$MyEH.ok(IloCustomOplErrorHandler.java:35)
+	at ilog.opl.opl_lang_wrapJNI.SwigDirector_IloOplErrorHandlerWrapper_ok(opl_lang_wrapJNI.java:1147)
+	at ilog.opl.opl_lang_wrapJNI.IloOplModel_solveAlgorithm(Native Method)
+	at ilog.opl.IloOplModel.solveAlgorithm(IloOplModel.java:486)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessSimpleCP(IloOplRunConfigRunner.java:304)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessSimple(IloOplRunConfigRunner.java:179)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessModel(IloOplRunConfigRunner.java:163)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:377)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-08-07 18:41:33.191 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 18:41:33.191
+!MESSAGE Run inter_s3 in /Users/czj/Projets/Cplex/transport-with-time
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2024-08-07 18:42:48.454
+!MESSAGE run failed
+!STACK 0
+ilog.concert.IloException: Processing aborted.
+	at ilog.opl.opl_lang_wrapJNI.IloOplErrorHandlerWrapper_superOk(Native Method)
+	at ilog.opl.IloOplErrorHandlerWrapper.superOk(IloOplErrorHandlerWrapper.java:86)
+	at ilog.opl.IloCustomOplErrorHandler.customOk(IloCustomOplErrorHandler.java:78)
+	at ilog.opl.IloCustomOplErrorHandler$MyEH.ok(IloCustomOplErrorHandler.java:35)
+	at ilog.opl.opl_lang_wrapJNI.SwigDirector_IloOplErrorHandlerWrapper_ok(opl_lang_wrapJNI.java:1147)
+	at ilog.opl.opl_lang_wrapJNI.IloOplErrorHandler_ok(Native Method)
+	at ilog.opl.IloOplErrorHandler.ok(IloOplErrorHandler.java:131)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessSimpleCplex(IloOplRunConfigRunner.java:279)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessSimple(IloOplRunConfigRunner.java:177)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessModel(IloOplRunConfigRunner.java:163)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:377)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-08-07 18:42:52.025 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 18:42:52.025
+!MESSAGE Run inter_s4 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 19:10:35.404 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 19:10:35.404
+!MESSAGE Run inter_s3 in /Users/czj/Projets/Cplex/transport-with-time
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2024-08-07 19:11:54.479
+!MESSAGE run failed
+!STACK 0
+ilog.concert.IloException: Processing aborted.
+	at ilog.opl.opl_lang_wrapJNI.IloOplErrorHandlerWrapper_superOk(Native Method)
+	at ilog.opl.IloOplErrorHandlerWrapper.superOk(IloOplErrorHandlerWrapper.java:86)
+	at ilog.opl.IloCustomOplErrorHandler.customOk(IloCustomOplErrorHandler.java:78)
+	at ilog.opl.IloCustomOplErrorHandler$MyEH.ok(IloCustomOplErrorHandler.java:35)
+	at ilog.opl.opl_lang_wrapJNI.SwigDirector_IloOplErrorHandlerWrapper_ok(opl_lang_wrapJNI.java:1147)
+	at ilog.opl.opl_lang_wrapJNI.IloOplErrorHandler_ok(Native Method)
+	at ilog.opl.IloOplErrorHandler.ok(IloOplErrorHandler.java:131)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessSimpleCplex(IloOplRunConfigRunner.java:279)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessSimple(IloOplRunConfigRunner.java:177)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessModel(IloOplRunConfigRunner.java:163)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:377)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-08-07 19:11:58.434 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 19:11:58.434
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 19:12:43.658 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 19:12:43.659
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-07 19:13:22.095 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-07 19:13:22.095
+!MESSAGE Run inter_s3 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-08 14:38:41.546 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-08 14:38:41.546
+!MESSAGE Run inter_s4 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-08 15:14:56.051 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-08 15:14:56.051
+!MESSAGE Run inter_s2 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-08 15:15:13.129 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-08 15:15:13.129
+!MESSAGE Run inter_s3 in /Users/czj/Projets/Cplex/transport-with-time
+!SESSION 2024-08-08 15:15:58.081 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-08 15:15:58.081
+!MESSAGE Run inter_s4 in /Users/czj/Projets/Cplex/transport-with-time
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2024-08-08 15:29:01.813
+!MESSAGE run failed
+!STACK 0
+ilog.concert.IloException: Processing aborted.
+	at ilog.opl.opl_lang_wrapJNI.IloOplErrorHandlerWrapper_superOk(Native Method)
+	at ilog.opl.IloOplErrorHandlerWrapper.superOk(IloOplErrorHandlerWrapper.java:86)
+	at ilog.opl.IloCustomOplErrorHandler.customOk(IloCustomOplErrorHandler.java:78)
+	at ilog.opl.IloCustomOplErrorHandler$MyEH.ok(IloCustomOplErrorHandler.java:35)
+	at ilog.opl.opl_lang_wrapJNI.SwigDirector_IloOplErrorHandlerWrapper_ok(opl_lang_wrapJNI.java:1147)
+	at ilog.opl.opl_lang_wrapJNI.IloOplErrorHandler_ok(Native Method)
+	at ilog.opl.IloOplErrorHandler.ok(IloOplErrorHandler.java:131)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessSimpleCplex(IloOplRunConfigRunner.java:279)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessSimple(IloOplRunConfigRunner.java:177)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessModel(IloOplRunConfigRunner.java:163)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:377)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1605)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-08-08 15:29:21.257 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration /Users/czj/Projets/Cplex/.metadata/workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-08-08 15:29:21.258
+!MESSAGE Run inter_s4 in /Users/czj/Projets/Cplex/transport-with-time

@@ -29,6 +29,45 @@
 			</ref>
             		
         </config>
+        		
+        <config default="false" name="inter_s3" category="opl">
+            			
+            <ref name="intermodal_with_time.mod" type="model">
+			</ref>
+            			
+            <ref name="scenario3.dat" type="data">
+			</ref>
+            			
+            <ref name="transport_modal_data.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="inter_s4" category="opl">
+            			
+            <ref name="intermodal_with_time.mod" type="model">
+			</ref>
+            			
+            <ref name="scenario4.dat" type="data">
+			</ref>
+            			
+            <ref name="transport_modal_data.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="inter_s5" category="opl">
+            			
+            <ref name="intermodal_with_time.mod" type="model">
+			</ref>
+            			
+            <ref name="scenario5.dat" type="data">
+			</ref>
+            			
+            <ref name="transport_modal_data.dat" type="data">
+			</ref>
+            		
+        </config>
         	
     </configs>
     	
