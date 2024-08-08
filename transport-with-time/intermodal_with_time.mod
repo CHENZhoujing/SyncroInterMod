@@ -42,6 +42,14 @@ dvar int+ x[Goods][Services]; // 每个物品在某个服务上的运输量 Tran
 dvar boolean timeViolation[Goods]; // 时间违规变量 Time violation variable
 //dvar boolean timeViolation2[Goods]; // 时间违规变量2，保证有解 Time violation variable to ensure feasibility
 
+float timelimit = ...;
+float epgap = ...;
+
+execute PRE_PROCESSING {
+  cplex.tilim = timelimit;
+  cplex.epgap = epgap;
+}
+
 // 目标函数：运输成本和超时成本
 // Objective function: transportation cost and overtime cost
 minimize 

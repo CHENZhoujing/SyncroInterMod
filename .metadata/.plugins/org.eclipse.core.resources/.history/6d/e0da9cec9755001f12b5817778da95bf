@@ -4,8 +4,8 @@
  * Creation Date: Aug 2, 2024 at 4:53:24 PM
  *********************************************/
  
- timelimit = 3600;
- epgap = 0.001;
+ Timelimit = 3600;
+ Epgap = 0.001;
 
  GoodsDetails = {
     <"201", "1", "10", 26, 54, 102, 70>,
