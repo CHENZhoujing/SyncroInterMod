@@ -40,7 +40,7 @@ setof(string) Goods = {gd.good | gd in GoodsDetails}; // 从GoodsDetails中提�
 
 dvar int+ x[Goods][Services]; // 每个物品在某个服务上的运输量 Transportation quantity of each good on each service
 dvar boolean timeViolation[Goods]; // 时间违规变量 Time violation variable
-dvar boolean timeViolation2[Goods]; // 时间违规变量2，保证有解 Time violation variable to ensure feasibility
+//dvar boolean timeViolation2[Goods]; // 时间违规变量2，保证有解 Time violation variable to ensure feasibility
 
 float timelimit = ...;
 float epgap = ...;
@@ -55,8 +55,8 @@ execute PRE_PROCESSING {
 minimize 
     sum(gd in GoodsDetails, s in Services) s.transitcost * x[gd.good][s] // 运输成本 Transportation cost 
     + sum(gd in GoodsDetails, s in Services) s.carbonemissions * x[gd.good][s] // 碳排放成本 Carbon emissions cost
-    + sum(gd in GoodsDetails) gd.penalty * timeViolation[gd.good] * gd.capacity // 超时惩罚成本 Penalty cost for late delivery
-    + sum(gd in GoodsDetails) 1e9 * timeViolation2[gd.good]; // 无解惩罚成本 No-solution penalty cost
+    + sum(gd in GoodsDetails) gd.penalty * timeViolation[gd.good] * gd.capacity; // 超时惩罚成本 Penalty cost for late delivery
+    //+ sum(gd in GoodsDetails) 1e8 * timeViolation2[gd.good]; // 无解惩罚成本 No-solution penalty cost
 
 // 约束条件
 // Constraints
@@ -128,10 +128,10 @@ execute {
             writeln("  - Status: On Time");
         }
         
-        if (timeViolation2[gd.good] == 1) {
-            writeln("  - Status: No-solution");
-        } else {
-            writeln("  - Status: OK");
-        }
+        //if (timeViolation2[gd.good] == 1) {
+        //    writeln("  - Status: No-solution");
+        //} else {
+        //    writeln("  - Status: OK");
+        //}
     }
 }

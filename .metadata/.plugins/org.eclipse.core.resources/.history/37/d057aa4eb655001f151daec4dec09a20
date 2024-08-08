@@ -56,7 +56,7 @@ minimize
     sum(gd in GoodsDetails, s in Services) s.transitcost * x[gd.good][s] // 运输成本 Transportation cost 
     + sum(gd in GoodsDetails, s in Services) s.carbonemissions * x[gd.good][s] // 碳排放成本 Carbon emissions cost
     + sum(gd in GoodsDetails) gd.penalty * timeViolation[gd.good] * gd.capacity // 超时惩罚成本 Penalty cost for late delivery
-    + sum(gd in GoodsDetails) 1e9 * timeViolation2[gd.good]; // 无解惩罚成本 No-solution penalty cost
+    + sum(gd in GoodsDetails) 1e8 * timeViolation2[gd.good]; // 无解惩罚成本 No-solution penalty cost
 
 // 约束条件
 // Constraints

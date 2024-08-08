@@ -102,9 +102,6 @@
             			
             <ref name="scenario3.dat" type="data">
 			</ref>
-            			
-            <ref name="intermodal_with_time.mod" type="model">
-			</ref>
             		
         </config>
         	
