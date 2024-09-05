@@ -50,14 +50,13 @@ execute PRE_PROCESSING {
   cplex.epgap = epgap;
 }
 
-
 // 目标函数：运输成本和超时成本
 // Objective function: transportation cost and overtime cost
 minimize 
     sum(gd in GoodsDetails, s in Services) s.transitcost * x[gd.good][s] // 运输成本 Transportation cost 
     + sum(gd in GoodsDetails, s in Services) s.carbonemissions * x[gd.good][s] // 碳排放成本 Carbon emissions cost
     + sum(gd in GoodsDetails) gd.penalty * timeViolation[gd.good] * gd.capacity // 超时惩罚成本 Penalty cost for late delivery
-    + sum(gd in GoodsDetails) 1e10 * capacityViolation[gd.good]; // 无解惩罚成本 No-solution penalty cost
+    + sum(gd in GoodsDetails) 1e9 * capacityViolation[gd.good]; // 无解惩罚成本 No-solution penalty cost
 
 // 约束条件
 // Constraints
@@ -80,7 +79,6 @@ subject to {
         // Time violation occurs if the arrival time of the service exceeds the good's arrival time limit
         forall(s in Services: s.destination == gd.destination)
             s.modality == "Truck" || x[gd.good][s] == 0 || s.arrivaltime <= gd.arrivaltime + 1e9 * timeViolation[gd.good];
-            	
 
         // 中间节点的物品平衡约束
         // Balance constraint at intermediate nodes
@@ -96,18 +94,14 @@ subject to {
     }
 
     // 每条服务上的总运输量不能超过其容量限制
-	// 如果某个货物违反容量限制，其运输量为0
-	forall(s in Services)
-    	sum(gd in GoodsDetails) x[gd.good][s] <= s.capacity + sum(gd in GoodsDetails) capacityViolation[gd.good] * gd.capacity;
+    // Total transportation quantity on each service cannot exceed its capacity
+    forall(s in Services)
+        sum(gd in GoodsDetails) x[gd.good][s] <= s.capacity + 1e9 * capacityViolation[s];
 
-         
- 
     // 确保非负运输量
     // Ensure non-negative transportation quantity
-    forall(gd in GoodsDetails, s in Services) {
-      	x[gd.good][s] >= 0;
-    }
-        
+    forall(gd in GoodsDetails, s in Services)
+        x[gd.good][s] >= 0;
 }
 
 // 输出执行部分
@@ -134,7 +128,7 @@ execute {
             writeln("  - Status: On Time");
         }
         
-        if (capacityViolation[gd.good] == 1) {
+        if (timeViolation2[gd.good] == 1) {
             writeln("  - Status: No-solution");
         } else {
             writeln("  - Status: OK");

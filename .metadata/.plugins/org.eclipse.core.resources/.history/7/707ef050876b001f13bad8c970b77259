@@ -67,7 +67,8 @@ subject to {
    	//节点时间限制
    	forall(a1 in Arcs, a2 in Arcs: a1.end == a2.start)
    	  	
-   	  
+   	  	
+
     // 每条弧上的总运输量不能超过其容量限制 // Total transported weight on each arc must not exceed its capacity
     forall(a in Arcs, m in Modes)
         sum(gd in GoodsDetails) gd.capacity * x[gd.good][a][m] <= Capacity[a][m];

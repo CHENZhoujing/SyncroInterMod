@@ -80,7 +80,6 @@ subject to {
         // Time violation occurs if the arrival time of the service exceeds the good's arrival time limit
         forall(s in Services: s.destination == gd.destination)
             s.modality == "Truck" || x[gd.good][s] == 0 || s.arrivaltime <= gd.arrivaltime + 1e9 * timeViolation[gd.good];
-            	
 
         // 中间节点的物品平衡约束
         // Balance constraint at intermediate nodes
@@ -96,16 +95,17 @@ subject to {
     }
 
     // 每条服务上的总运输量不能超过其容量限制
-	// 如果某个货物违反容量限制，其运输量为0
-	forall(s in Services)
-    	sum(gd in GoodsDetails) x[gd.good][s] <= s.capacity + sum(gd in GoodsDetails) capacityViolation[gd.good] * gd.capacity;
-
+    // Total transportation quantity on each service cannot exceed its capacity
+    forall(s in Services)
+         sum(gd in GoodsDetails) x[gd.good][s] * (1 - capacityViolation[gd.good]) <= s.capacity;
          
- 
+     
+         
     // 确保非负运输量
     // Ensure non-negative transportation quantity
     forall(gd in GoodsDetails, s in Services) {
       	x[gd.good][s] >= 0;
+        x[gd.good][s] <= 1e10 * (1 - capacityViolation[gd.good]);
     }
         
 }
@@ -134,7 +134,7 @@ execute {
             writeln("  - Status: On Time");
         }
         
-        if (capacityViolation[gd.good] == 1) {
+        if (timeViolation2[gd.good] == 1) {
             writeln("  - Status: No-solution");
         } else {
             writeln("  - Status: OK");

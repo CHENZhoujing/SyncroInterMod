@@ -40,7 +40,12 @@ setof(string) Goods = {gd.good | gd in GoodsDetails}; // 从GoodsDetails中提�
 
 dvar int+ x[Goods][Services]; // 每个物品在某个服务上的运输量 Transportation quantity of each good on each service
 dvar boolean timeViolation[Goods]; // 时间违规变量 Time violation variable
-dvar boolean capacityViolation[Goods]; // 服务容量违规变量，保证有解 Time violation variable to ensure feasibility
+dvar boolean timeViolation2[Goods]; // 时间违规变量2，保证有解 Time violation variable to ensure feasibility
+
+// 新增变量：实时调整的成本和时间
+// New variables: Real-time adjusted cost and time
+dvar float+ dynamicCostAdjustment[Goods][Services];
+dvar float+ dynamicTimeAdjustment[Goods][Services];
 
 float timelimit = ...;
 float epgap = ...;
@@ -50,14 +55,13 @@ execute PRE_PROCESSING {
   cplex.epgap = epgap;
 }
 
-
-// 目标函数：运输成本和超时成本
-// Objective function: transportation cost and overtime cost
+// 目标函数：运输成本、碳排放成本、超时成本和弹性成本
+// Objective function: transportation cost, carbon emissions cost, overtime cost, and resilience cost
 minimize 
-    sum(gd in GoodsDetails, s in Services) s.transitcost * x[gd.good][s] // 运输成本 Transportation cost 
+    sum(gd in GoodsDetails, s in Services) (s.transitcost + dynamicCostAdjustment[gd.good][s]) * x[gd.good][s] // 动态调整后的运输成本 Dynamically adjusted transportation cost 
     + sum(gd in GoodsDetails, s in Services) s.carbonemissions * x[gd.good][s] // 碳排放成本 Carbon emissions cost
     + sum(gd in GoodsDetails) gd.penalty * timeViolation[gd.good] * gd.capacity // 超时惩罚成本 Penalty cost for late delivery
-    + sum(gd in GoodsDetails) 1e10 * capacityViolation[gd.good]; // 无解惩罚成本 No-solution penalty cost
+    + sum(gd in GoodsDetails) 1e9 * timeViolation2[gd.good]; // 无解惩罚成本 No-solution penalty cost
 
 // 约束条件
 // Constraints
@@ -74,13 +78,12 @@ subject to {
         // 物品的出发时间限制早于服务开始时间才能使用该服务
         // Goods can only use a service if their departure time is before or equal to the service's departure time
         forall(s in Services: s.origin == gd.origin)
-            s.modality == "Truck" || x[gd.good][s] == 0 || gd.departuretime <= s.departuretime; //+ 1e8 * timeViolation2[gd.good];
+            s.modality == "Truck" || x[gd.good][s] == 0 || gd.departuretime <= s.departuretime; 
 
         // 如果服务到达时间超过物品的到达时间限制则超时
         // Time violation occurs if the arrival time of the service exceeds the good's arrival time limit
         forall(s in Services: s.destination == gd.destination)
-            s.modality == "Truck" || x[gd.good][s] == 0 || s.arrivaltime <= gd.arrivaltime + 1e9 * timeViolation[gd.good];
-            	
+            s.modality == "Truck" || x[gd.good][s] == 0 || s.arrivaltime + dynamicTimeAdjustment[gd.good][s] <= gd.arrivaltime + 1e8 * timeViolation[gd.good];
 
         // 中间节点的物品平衡约束
         // Balance constraint at intermediate nodes
@@ -92,22 +95,18 @@ subject to {
     // Ensure sequential services are feasible based on arrival and departure times
     forall(gd in GoodsDetails) {
         forall(s1 in Services, s2 in Services: s1.destination == s2.origin)
-            s1.modality == "Truck" || s2.modality == "Truck" || x[gd.good][s1] == 0 || x[gd.good][s2] == 0 || s1.arrivaltime <= s2.departuretime;
+            s1.modality == "Truck" || s2.modality == "Truck" || x[gd.good][s1] == 0 || x[gd.good][s2] == 0 || s1.arrivaltime + dynamicTimeAdjustment[gd.good][s1] <= s2.departuretime;
     }
 
     // 每条服务上的总运输量不能超过其容量限制
-	// 如果某个货物违反容量限制，其运输量为0
-	forall(s in Services)
-    	sum(gd in GoodsDetails) x[gd.good][s] <= s.capacity + sum(gd in GoodsDetails) capacityViolation[gd.good] * gd.capacity;
+    // Total transportation quantity on each service cannot exceed its capacity
+    forall(s in Services)
+        s.modality == "Truck" || sum(gd in GoodsDetails) x[gd.good][s] <= s.capacity;
 
-         
- 
     // 确保非负运输量
     // Ensure non-negative transportation quantity
-    forall(gd in GoodsDetails, s in Services) {
-      	x[gd.good][s] >= 0;
-    }
-        
+    forall(gd in GoodsDetails, s in Services)
+        x[gd.good][s] >= 0;
 }
 
 // 输出执行部分
@@ -123,7 +122,9 @@ execute {
         for (var s in Services) {
             if (x[gd.good][s] > 0) {
                 writeln("  - Service: ", s.modality, " from ", s.origin, " to ", s.destination, 
-                        ", Transported Quantity: ", x[gd.good][s]);
+                        ", Transported Quantity: ", x[gd.good][s],
+                        ", Dynamic Cost Adjustment: ", dynamicCostAdjustment[gd.good][s],
+                        ", Dynamic Time Adjustment: ", dynamicTimeAdjustment[gd.good][s]);
             }
         }
         // 检查是否超时
@@ -134,7 +135,7 @@ execute {
             writeln("  - Status: On Time");
         }
         
-        if (capacityViolation[gd.good] == 1) {
+        if (timeViolation2[gd.good] == 1) {
             writeln("  - Status: No-solution");
         } else {
             writeln("  - Status: OK");

@@ -95,10 +95,10 @@ subject to {
             s1.modality == "Truck" || s2.modality == "Truck" || x[gd.good][s1] == 0 || x[gd.good][s2] == 0 || s1.arrivaltime <= s2.departuretime;
     }
 
-    // 每条服务上的总运输量不能超过其容量限制
-	// 如果某个货物违反容量限制，其运输量为0
+    // 每条服务上的总运输量不能超过其容量限制，若超出则激活对应的capacityViolation变量
+	// Total transportation quantity on each service cannot exceed its capacity
 	forall(s in Services)
-    	sum(gd in GoodsDetails) x[gd.good][s] <= s.capacity + sum(gd in GoodsDetails) capacityViolation[gd.good] * gd.capacity;
+    	sum(gd in GoodsDetails) (x[gd.good][s] - 1e9 * capacityViolation[gd.good]) <= s.capacity;
 
          
  

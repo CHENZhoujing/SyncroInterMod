@@ -100,6 +100,7 @@ subject to {
 	forall(s in Services)
     	sum(gd in GoodsDetails) x[gd.good][s] <= s.capacity + sum(gd in GoodsDetails) capacityViolation[gd.good] * gd.capacity;
 
+
          
  
     // 确保非负运输量
