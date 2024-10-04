@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ASCII"?><project>
+    	
+    <version>1.0</version>
+    	
+    <configs>
+        		
+        <config default="false" name="inter_s2" category="opl">
+            			
+            <ref name="scenario2.dat" type="data">
+			</ref>
+            			
+            <ref name="transport_modal_data.dat" type="data">
+			</ref>
+            			
+            <ref name="intermodal_with_time.mod" type="model">
+			</ref>
+            		
+        </config>
+        		
+        <config default="true" name="inter_s1" category="opl">
+            			
+            <ref name="transport_modal_data.dat" type="data">
+			</ref>
+            			
+            <ref name="scenario1.dat" type="data">
+			</ref>
+            			
+            <ref name="intermodal_with_time.mod" type="model">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="inter_s3" category="opl">
+            			
+            <ref name="scenario3.dat" type="data">
+			</ref>
+            			
+            <ref name="transport_modal_data.dat" type="data">
+			</ref>
+            			
+            <ref name="intermodal_with_time.mod" type="model">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="inter_s4" category="opl">
+            			
+            <ref name="scenario4.dat" type="data">
+			</ref>
+            			
+            <ref name="transport_modal_data.dat" type="data">
+			</ref>
+            			
+            <ref name="intermodal_with_time.mod" type="model">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="inter_s1_interrupted_test" category="opl">
+            			
+            <ref name="scenario1.dat" type="data">
+			</ref>
+            			
+            <ref name="services_interrupted_1_1.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="inter_s2_interrupted_test" category="opl">
+            			
+            <ref name="scenario2.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="inter_s3_interrupted_test" category="opl">
+            			
+            <ref name="scenario3.dat" type="data">
+			</ref>
+            		
+        </config>
+        		
+        <config default="false" name="inter_s4_interrupted_test" category="opl">
+            			
+            <ref name="scenario4.dat" type="data">
+			</ref>
+            		
+        </config>
+        	
+    </configs>
+    	
+
+</project>

@@ -1,0 +1,310 @@
+/*********************************************
+ * OPL 22.1.1.0 Model
+ * Author: czj
+ * Creation Date: Jul 21, 2024 at 4:01:47 PM
+ *********************************************/
+
+using CPLEX;
+
+// Define the transportation service information tuple
+// 定义运输服务信息的元组
+tuple ServiceInfo {
+    string mode;               // Transportation mode (运输方式)
+    string originNode;         // Origin node (起点)
+    string destinationNode;    // Destination node (终点)
+    int capacity;              // Service capacity (服务容量)
+    float departureTime;       // Departure time (出发时间)
+    float arrivalTime;         // Arrival time (到达时间)
+    float transitTime;         // Transit time (运输时间)
+    float transportCost;       // Transportation cost (运输成本)
+    float carbonEmissions;     // Carbon emissions (碳排放量)
+}
+
+// Define the goods information tuple
+// 定义货物信息的元组
+tuple GoodInfo {
+    string goodID;             // Good identifier (货物标识)
+    string originNode;         // Origin node (起点)
+    string destinationNode;    // Destination node (终点)
+    int quantity;              // Quantity (数量)
+    float plannedDepartureTime; // Planned departure time (计划出发时间)
+    float requiredArrivalTime;  // Required arrival time (要求到达时间)
+    float overtimePenalty;      // Overtime penalty per unit time (每单位时间的超时惩罚)
+}
+
+// Define sets of services, nodes, modes, and goods
+// 定义服务、节点、运输方式和货物的集合
+{ServiceInfo} Services = ...;      // Set of transportation services (运输服务集合)
+setof(string) Nodes = ...;         // Set of all nodes including origins, destinations, and transfer nodes (所有节点集合，包括起点、终点和转运节点)
+setof(string) Modes = ...;         // Set of all transportation modes (所有运输方式集合)
+
+{GoodInfo} GoodsDetails = ...;     // Set of goods details (货物详细信息集合)
+setof(string) Goods = {gd.goodID | gd in GoodsDetails}; // Set of goods identifiers (货物标识集合)
+
+// Decision variables
+// 决策变量
+dvar boolean abandon[Goods];                    // 是否放弃运输货物的二进制变量
+dvar float+ delayTime[Goods];                   // Positive delay time variable (正延迟时间变量)
+dvar boolean assignService[Goods][Services];    // Binary variable indicating whether a good is assigned to a service (二进制变量，表示货物是否分配到某个服务)
+
+dvar float+ arrivalTimeAtNode[Goods][Nodes];    // Arrival time of each good at each node (每个货物在每个节点的到达时间)
+dvar float+ departureTimeFromNode[Goods][Nodes];// Departure time of each good from each node (每个货物从每个节点的离开时间)
+
+// Parameters
+// 参数
+float timeLimit = ...;              // Time limit for CPLEX solver (CPLEX求解器的时间限制)
+float mipGap = ...;                 // Relative MIP gap tolerance for CPLEX solver (CPLEX求解器的相对MIP间隙容忍度)
+float disasterImpactFactor = ...;   // Disaster impact factor (灾害影响系数)
+
+// Loading and unloading costs and times indexed by transportation modes
+// 按运输方式索引的装卸费用和时间
+float loadingCost[Modes] = [18.0, 18.0, 3.0];       // Loading cost per mode (每种运输方式的装载成本)
+float unloadingCost[Modes] = [18.0, 18.0, 3.0];     // Unloading cost per mode (每种运输方式的卸载成本)
+float loadingTime[Modes] = [1.0, 1.0, 0.0];         // Loading time per mode (每种运输方式的装载时间)
+float unloadingTime[Modes] = [1.0, 1.0, 0.0];       // Unloading time per mode (每种运输方式的卸载时间)
+
+float storageCostPerHour = 1.0;    // Storage cost per hour (每小时的仓储成本)
+float carbonTaxPerTon = 8.0;       // Carbon tax per ton (每吨的碳税)
+
+// Big M constant for constraints
+// 约束中使用的足够大的常数
+float BigM = 1e6;
+
+// Set CPLEX solver parameters
+// 设置CPLEX求解器参数
+execute PRE_PROCESSING {
+  cplex.tilim = timeLimit;
+  cplex.epgap = mipGap;
+}
+
+
+
+// Objective function
+// 目标函数
+minimize
+
+    // Total transportation cost and carbon emission cost
+    // 总运输成本和碳排放成本
+    sum(gd in GoodsDetails, s in Services) (
+        (1 - abandon[gd.goodID]) * (
+            s.transportCost * assignService[gd.goodID][s] * gd.quantity
+            + s.carbonEmissions * assignService[gd.goodID][s] * gd.quantity * carbonTaxPerTon / 1000
+        )
+    )
+    
+    // Total loading and unloading costs
+    // 总装卸成本
+    + sum(gd in GoodsDetails, s in Services) (
+        (1 - abandon[gd.goodID]) * (
+            (loadingCost[s.mode] + unloadingCost[s.mode]) * assignService[gd.goodID][s] * gd.quantity
+        )
+    )
+    
+    // Total storage costs
+    // 总仓储成本
+    + sum(gd in GoodsDetails) (
+        (1 - abandon[gd.goodID]) * storageCostPerHour * gd.quantity * (
+            (arrivalTimeAtNode[gd.goodID][gd.destinationNode]) 
+            - sum(s in Services) (assignService[gd.goodID][s] * (s.transitTime + loadingTime[s.mode] + unloadingTime[s.mode]))
+            - gd.plannedDepartureTime
+        )
+    )
+    
+    // Total overtime penalty cost
+    // 总超时惩罚成本
+    + sum(gd in GoodsDetails) (
+        gd.overtimePenalty * gd.quantity * delayTime[gd.goodID]
+    )
+    
+    // Penalty for abandoning goods
+    // 放弃货物的惩罚成本
+    + sum(gd in GoodsDetails)  BigM * abandon[gd.goodID];
+
+// Constraints
+// 约束条件
+subject to {
+
+    // Flow conservation constraints for goods at nodes
+    // 货物在节点处的流量守恒约束
+    forall(gd in GoodsDetails) {
+        // At the origin node: the sum of services departing from the origin equals 1 - abandon
+        // 起点：从起点出发的服务数量之和等于 1 - abandon
+        sum(s in Services: s.originNode == gd.originNode) assignService[gd.goodID][s] == 1 - abandon[gd.goodID];
+
+        // At the destination node: the sum of services arriving at the destination equals 1 - abandon
+        // 终点：到达终点的服务数量之和等于 1 - abandon
+        sum(s in Services: s.destinationNode == gd.destinationNode) assignService[gd.goodID][s] == 1 - abandon[gd.goodID];
+
+        // At intermediate nodes: the sum of incoming services equals the sum of outgoing services for each good
+        // 中间节点：每个货物在中间节点的流入服务数等于流出服务数
+        forall(n in Nodes: n != gd.originNode && n != gd.destinationNode) {
+            sum(s in Services: s.destinationNode == n) assignService[gd.goodID][s] - sum(s in Services: s.originNode == n) assignService[gd.goodID][s] == 0;
+        }
+    }
+
+    // Service assignment constraints when abandoning goods
+    // 当放弃货物时，不能为其分配任何服务
+    forall(gd in GoodsDetails, s in Services) {
+        assignService[gd.goodID][s] <= 1 - abandon[gd.goodID];
+    }
+
+    // Service capacity constraints (non-Truck modes)
+    // 服务容量约束（非卡车运输方式）
+    forall(s in Services)
+        s.mode == "Truck" || sum(gd in GoodsDetails) assignService[gd.goodID][s] * gd.quantity <= s.capacity;
+
+    // Time variable constraints when goods are abandoned
+    // 当货物被放弃时，时间变量应为零
+    forall(gd in GoodsDetails, n in Nodes) {
+        arrivalTimeAtNode[gd.goodID][n] <= BigM * (1 - abandon[gd.goodID]);
+        departureTimeFromNode[gd.goodID][n] <= BigM * (1 - abandon[gd.goodID]);
+    }
+
+    // Non-negativity constraints for arrival and departure times
+    // 到达和离开时间的非负约束
+    forall(gd in GoodsDetails, n in Nodes) {
+        departureTimeFromNode[gd.goodID][n] >= 0;
+        departureTimeFromNode[gd.goodID][n] <= 250;
+        arrivalTimeAtNode[gd.goodID][n] >= 0;
+        arrivalTimeAtNode[gd.goodID][n] <= 250;
+    }
+
+    // Time constraints for each used service
+    // 为每个使用的服务添加时间约束
+    forall(gd in GoodsDetails, s in Services) {
+        if (s.mode != "Truck") {
+            // For non-Truck modes, set departure and arrival times based on service times
+            // 对于非卡车方式，基于服务时间设置出发和到达时间
+            (assignService[gd.goodID][s] == 1) => 
+            departureTimeFromNode[gd.goodID][s.originNode] == s.departureTime - loadingTime[s.mode] &&
+            arrivalTimeAtNode[gd.goodID][s.destinationNode] == s.arrivalTime + unloadingTime[s.mode] &&
+            gd.plannedDepartureTime <= departureTimeFromNode[gd.goodID][s.originNode] &&
+            gd.plannedDepartureTime <= arrivalTimeAtNode[gd.goodID][s.destinationNode];
+        } else {
+            // For Truck mode, arrival time depends on departure time, transit time, and disaster impact
+            // 对于卡车方式，到达时间取决于离开时间、运输时间和灾害影响
+            (assignService[gd.goodID][s] == 1) => 
+            arrivalTimeAtNode[gd.goodID][s.destinationNode] == departureTimeFromNode[gd.goodID][s.originNode] + s.transitTime * (1 + disasterImpactFactor) + loadingTime[s.mode] + unloadingTime[s.mode] &&
+            gd.plannedDepartureTime <= departureTimeFromNode[gd.goodID][s.originNode] &&
+            gd.plannedDepartureTime <= arrivalTimeAtNode[gd.goodID][s.destinationNode];
+        }
+    }
+
+    // Arrival and departure time constraints at nodes when no service is used
+    // 当未使用服务时，节点处的到达和离开时间约束
+    forall(gd in GoodsDetails, n in Nodes) {
+        // If the good does not arrive at node n via any service, set arrival time to zero or BigM*(1 - abandon)
+        // 如果货物未通过任何服务到达节点n，则将到达时间设为零或 BigM*(1 - abandon)
+        (sum(s in Services: s.destinationNode == n) assignService[gd.goodID][s] == 0) => 
+        (arrivalTimeAtNode[gd.goodID][n] == 0);
+        
+        // If the good does not depart from node n via any service, set departure time to zero or BigM*(1 - abandon)
+        // 如果货物未通过任何服务从节点n出发，则将离开时间设为零或 BigM*(1 - abandon)
+        (sum(s in Services: s.originNode == n) assignService[gd.goodID][s] == 0) => 
+        (departureTimeFromNode[gd.goodID][n] == 0);
+    }
+
+    // Time synchronization constraints between consecutive services
+    // 连续服务之间的时间同步约束
+    forall(gd in GoodsDetails, s1 in Services, s2 in Services: s1.destinationNode == s2.originNode) {
+        // When a good uses two consecutive services, ensure proper timing
+        // 当货物连续使用两个服务时，确保时间衔接
+        (assignService[gd.goodID][s1] == 1 && assignService[gd.goodID][s2] == 1) => 
+        departureTimeFromNode[gd.goodID][s2.originNode] >= arrivalTimeAtNode[gd.goodID][s1.destinationNode];
+    }
+
+    // Overtime penalty constraints
+    // 超时惩罚约束
+    forall(gd in GoodsDetails) {
+        delayTime[gd.goodID] >= arrivalTimeAtNode[gd.goodID][gd.destinationNode] - gd.requiredArrivalTime - BigM * abandon[gd.goodID];
+        delayTime[gd.goodID] >= 0;
+    }
+}
+
+// Output the transportation plan and cost details
+// 输出运输计划和成本细节
+execute {
+    writeln("Transportation Plan and Overtime Information:");
+    // Output the transportation plan and status for each good
+    // 输出每个货物的运输计划和状态
+    for (var gd in GoodsDetails) {
+        writeln("----------------------------------------------------");
+        writeln("Good ID (货物编号): ", gd.goodID);
+        writeln("Transported Quantity (运输数量): ", gd.quantity);
+        writeln("Origin to Destination (起点到终点): ", gd.originNode, " to ", gd.destinationNode);
+        writeln("Planned Departure Time (计划出发时间): ", gd.plannedDepartureTime);
+        writeln("Required Arrival Time (要求到达时间): ", gd.requiredArrivalTime);
+
+        if (abandon[gd.goodID].solutionValue > 0.5) {
+            writeln("Status (状态): Abandoned (已放弃运输)");
+            writeln("Total Cost for Good (货物的总成本): ", 1e8);
+            continue;
+        }
+
+        writeln("Used Services (使用的服务):");
+        // Initialize total cost components
+        // 初始化总成本的各个部分
+        var transportCost = 0.0;
+        var carbonCost = 0.0;
+        var loadingUnloadingCost = 0.0;
+        var storageCost = 0.0;
+        var penaltyCost = 0.0;
+        var totalServiceTime = 0.0;
+        var maxArrivalTime = 0.0;
+        for (var s in Services) {
+            if (assignService[gd.goodID][s].solutionValue > 0.5) {
+                writeln("  - Mode (运输方式): ", s.mode);
+                writeln("    From ", s.originNode, " to ", s.destinationNode);
+                writeln("    Service Departure Time (服务出发时间): ", s.departureTime);
+                writeln("    Service Arrival Time (服务到达时间): ", s.arrivalTime);
+                writeln("    Good Departure Time at Origin (货物在起点的离开时间): ", departureTimeFromNode[gd.goodID][s.originNode].solutionValue);
+                writeln("    Good Arrival Time at Destination (货物在终点的到达时间): ", arrivalTimeAtNode[gd.goodID][s.destinationNode].solutionValue);
+                writeln("    Transit Time (运输时间): ", s.transitTime);
+                writeln("    Transport Cost (运输成本): ", s.transportCost * gd.quantity);
+                // Accumulate costs
+                transportCost += s.transportCost * gd.quantity;
+                carbonCost += s.carbonEmissions * gd.quantity * carbonTaxPerTon / 1000;
+                loadingUnloadingCost += (loadingCost[s.mode] + unloadingCost[s.mode]) * gd.quantity;
+                totalServiceTime += s.transitTime + loadingTime[s.mode] + unloadingTime[s.mode];
+            }
+        }
+        // Calculate maximum arrival time
+        // 计算最大到达时间
+        for (var n in Nodes) {
+            if (arrivalTimeAtNode[gd.goodID][n].solutionValue > maxArrivalTime) {
+                maxArrivalTime = arrivalTimeAtNode[gd.goodID][n].solutionValue;
+            }
+        }
+        // Calculate storage cost
+        // 计算仓储成本
+        storageCost = storageCostPerHour * gd.quantity * (maxArrivalTime - totalServiceTime - gd.plannedDepartureTime);
+        // Calculate penalty cost
+        // 计算惩罚成本
+        penaltyCost = gd.overtimePenalty * gd.quantity * delayTime[gd.goodID].solutionValue;
+        // Calculate total cost
+        // 计算总成本
+        var totalCost = transportCost + carbonCost + loadingUnloadingCost + storageCost + penaltyCost;
+        // Check if there is a time violation
+        // 检查是否存在超时
+        if (delayTime[gd.goodID].solutionValue > 0.0) {
+            writeln("Status (状态): Overtime (超时)");
+            writeln("  Delay Time (延迟时间): ", delayTime[gd.goodID].solutionValue);
+        } else {
+            writeln("Status (状态): On Time (准时)");
+        }
+        // Output cost details
+        // 输出成本细节
+        writeln("Cost Details (成本细节):");
+        writeln("  Transportation Cost (运输成本): ", transportCost);
+        writeln("  Carbon Emission Cost (碳排放成本): ", carbonCost);
+        writeln("  Loading/Unloading Cost (装卸成本): ", loadingUnloadingCost);
+        writeln("  Storage Cost (仓储成本): ", storageCost);
+        writeln("  Penalty Cost (惩罚成本): ", penaltyCost);
+        writeln("Total Cost for Good (货物的总成本): ", totalCost);
+    }
+    // Calculate and output the overall total cost
+    // 计算并输出总成本
+    var overallTotalCost = cplex.getObjValue();
+    writeln("====================================================");
+    writeln("Overall Total Cost (总成本): ", overallTotalCost);
+}

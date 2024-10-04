@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="opl.launchType">
+    <stringAttribute key="opl.debugModel.ATTR_ELEMENT_ID" value="=t\ranspo\rt-with-timeR\Run Con\figu\rationsrinte\r_s4_inte\r\rupted_test"/>
+    <stringAttribute key="opl.debugModel.ATTR_PROJECT" value="transport-with-time"/>
+    <stringAttribute key="opl.debugModel.ATTR_RUN_CONFIG" value="inter_s4_interrupted_test"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/transport-with-time"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="4"/>
+    </listAttribute>
+</launchConfiguration>

@@ -74,7 +74,7 @@ execute PRE_PROCESSING {
 
 // Objective function
 // 目标函数
-minimize 
+minimize
 
     // Total transportation cost and carbon emission cost
     // 总运输成本和碳排放成本
@@ -93,7 +93,7 @@ minimize
     // 总仓储成本
     + sum(gd in GoodsDetails) (
         storageCostPerHour * gd.quantity * (
-            max(n in Nodes) (arrivalTimeAtNode[gd.goodID][n]) 
+            arrivalTimeAtNode[gd.goodID][gd.destinationNode]
             - sum(s in Services) (assignService[gd.goodID][s] * (s.transitTime + loadingTime[s.mode] + unloadingTime[s.mode]))
             - gd.plannedDepartureTime
         )
