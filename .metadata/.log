@@ -748,3 +748,136 @@ Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -clean -keyring /Use
 
 !ENTRY ilog.odms.ide.core 1 0 2024-10-16 11:05:07.763
 !MESSAGE ODM Bundle is OFF
+
+!ENTRY ilog.odms.ide.opllang 1 0 2024-10-24 19:02:59.695
+!MESSAGE concert_wrap.IloEndMT
+!SESSION 2024-10-24 19:03:04.478 -----------------------------------------------
+eclipse.buildId=Build R0
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/czj/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -clean -keyring /Users/czj/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 2 2 2024-10-24 19:03:09.009
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.web (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY ilog.odms.ide.core 1 0 2024-10-24 19:03:09.256
+!MESSAGE ODM Bundle is OFF
+
+!ENTRY org.eclipse.ui 4 0 2024-10-25 12:13:51.615
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.util.ConcurrentModificationException
+	at java.base/java.util.ArrayList$SubList.checkForComodification(Unknown Source)
+	at java.base/java.util.ArrayList$SubList.listIterator(Unknown Source)
+	at java.base/java.util.AbstractList.listIterator(Unknown Source)
+	at java.base/java.util.ArrayList$SubList.iterator(Unknown Source)
+	at org.eclipse.jface.text.AbstractDocument.getPositions(AbstractDocument.java:1610)
+	at org.eclipse.jface.text.source.AnnotationModel.getRegionAnnotationIterator(AnnotationModel.java:718)
+	at org.eclipse.jface.text.source.AnnotationModel.getAnnotationIterator(AnnotationModel.java:680)
+	at org.eclipse.jface.text.source.AnnotationRulerColumn.doPaint1(AnnotationRulerColumn.java:739)
+	at org.eclipse.jface.text.source.AnnotationRulerColumn.doubleBufferPaint(AnnotationRulerColumn.java:546)
+	at org.eclipse.jface.text.source.AnnotationRulerColumn.lambda$1(AnnotationRulerColumn.java:274)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4577)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1547)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1532)
+	at org.eclipse.swt.widgets.Control.drawWidget(Control.java:1270)
+	at org.eclipse.swt.widgets.Canvas.drawWidget(Canvas.java:176)
+	at org.eclipse.swt.widgets.Widget.drawRect(Widget.java:777)
+	at org.eclipse.swt.widgets.Canvas.drawRect(Canvas.java:170)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6230)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationNextEventMatchingMask(Display.java:5508)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5908)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.nextEventMatchingMask(NSApplication.java:92)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3933)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at ilog.odms.ide.rcp.IloApplication.start(IloApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY ilog.odms.ide.core 2 0 2024-10-25 12:52:29.993
+!MESSAGE OPL busy, ignoring launch of transport-with-time inter_s3_interrupted_test
+
+!ENTRY ilog.odms.ide.opllang 1 0 2024-10-29 18:01:40.489
+!MESSAGE concert_wrap.IloEndMT
+!SESSION 2024-10-29 18:10:26.539 -----------------------------------------------
+eclipse.buildId=Build R0
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/czj/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -clean -keyring /Users/czj/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 2 2 2024-10-29 18:10:42.055
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.web (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY ilog.odms.ide.core 1 0 2024-10-29 18:10:42.615
+!MESSAGE ODM Bundle is OFF
+
+!ENTRY ilog.odms.ide.opllang 1 0 2024-10-29 18:10:49.686
+!MESSAGE concert_wrap.IloEndMT
+!SESSION 2024-10-31 22:48:30.451 -----------------------------------------------
+eclipse.buildId=Build R0
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/czj/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -clean -keyring /Users/czj/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 2 2 2024-10-31 22:48:36.411
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.web (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY ilog.odms.ide.core 1 0 2024-10-31 22:48:36.658
+!MESSAGE ODM Bundle is OFF
+
+!ENTRY ilog.odms.ide.opllang 1 0 2024-11-03 20:29:28.630
+!MESSAGE concert_wrap.IloEndMT
+!SESSION 2024-11-13 17:32:23.128 -----------------------------------------------
+eclipse.buildId=Build R0
+java.fullversion=18.0.2-ea+9
+JRE 18 Mac OS X aarch64-64-Bit 20220818_37 (JIT enabled, AOT enabled)
+OpenJ9   - 1d9d16830
+OMR      - b58aa2708
+JCL      - 8406c39ea29 based on jdk-18.0.2+9
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/czj/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -clean -keyring /Users/czj/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 2 2 2024-11-13 17:32:28.749
+!MESSAGE Invalid preference category path: org.eclipse.wst.html.ui.preferences.web (bundle: org.eclipse.wst.jsdt.ui, page: org.eclipse.wst.jsdt.ui.preferences.JavaBasePreferencePage)
+
+!ENTRY ilog.odms.ide.core 1 0 2024-11-13 17:32:28.997
+!MESSAGE ODM Bundle is OFF
+
+!ENTRY ilog.odms.ide.opllang 1 0 2024-11-13 17:41:12.536
+!MESSAGE concert_wrap.IloEndMT
